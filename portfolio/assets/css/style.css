@@ -1,0 +1,61 @@
+body, a {
+    margin: 0;
+    text-decoration: none;
+}
+
+*{
+    color: white;
+}
+
+header{
+    height: 10vh;
+    background-color: black;
+}
+
+.align-header-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(/portfolio/assets/fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: zeyada;
+    src: url(/portfolio/assets/fonts/Zeyada-Regular.ttf);
+}
+
+@font-face {
+    font-family: kaushan;
+    src: url(/portfolio/assets/fonts/KaushanScript-Regular.ttf);
+}
+
+.logo p{
+    font-size: 2rem;
+    font-family: zeyada;
+    text-transform: lowercase;
+    margin: 0;
+    font-weight: 600;
+}
+
+.navigation-content{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigation-content li{
+    margin-right: 1.5rem;
+    padding: 1rem;
+    list-style: none;
+    text-transform: uppercase;
+    font-family: roboto;
+    font-size: 1.2rem;
+    color: #e0dddd;
+    font-weight: normal;
+}
