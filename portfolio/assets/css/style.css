@@ -8,6 +8,10 @@ body, a {
     font-family: roboto;
 }
 
+main{
+    background-color: black;
+}
+
 header{
     height: 10vh;
     background-color: black;
@@ -139,4 +143,69 @@ header{
 .main-page-title{
     background-size: scale-down;
     background-position: bottom;
+}
+
+.about{
+    padding-top: 15rem;
+    height: 55vh;
+    background-color: black;
+    display: flex;
+}
+
+.column-align {
+    width: 50%;
+}
+
+.row-align{
+    height: 50%;
+    display: flex;
+}
+
+.right-align h2{
+    text-align: right;
+    text-transform: lowercase;
+    margin: 0;
+    font-size: 10rem;
+    color: rgb(67, 182, 67);
+}
+
+.column-align > .left-align{
+    text-align: right;
+    display: block;
+}
+
+.column-align > .right-align{
+    justify-content: flex-end;
+}
+
+.left-align button{
+    
+    background-color: transparent;
+    border: 1px solid rgb(105, 184, 105);
+    color: rgb(59, 165, 59);
+    border-radius: 50px;
+    font-size: 2rem;
+    padding: 1rem 1.5rem;
+    font-family: kaushan;
+    margin-right: 20rem;
+}
+
+.left-align button::after{
+    content: url('/portfolio/assets/pics/icons8-arrastar-para-cima\,-seta-para-a-direita-48.png');
+    margin-left: 1rem;
+}
+
+.align-text-left p{
+    font-size: 2rem;
+    font-weight: 100;
+    margin: 0;
+    color: rgb(59, 165, 59);
+    margin-top: 2rem;
+}
+
+.side-spaces{
+    width: 1400px;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
 }
