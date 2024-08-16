@@ -157,6 +157,8 @@ header{
 }
 .galery{
     padding: 0;
+    margin-right: 10rem;
+    padding-bottom: 5rem;
 }
 
 .divisor-normal{
@@ -255,4 +257,24 @@ header{
 
 .row-align-block button{
     margin-top: 5rem;
+}
+
+.display-project-pic{
+    height: 85vh;
+    background: url('/portfolio/assets/pics//frameworks.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.projects-navigation{
+    height: 40vh;
+    padding-top: 5rem;
+    display: flex;
+}
+
+.project-display{
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
 }
