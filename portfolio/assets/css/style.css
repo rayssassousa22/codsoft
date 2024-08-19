@@ -483,7 +483,18 @@ footer{
     font-weight: normal;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 10rem;
+    margin-bottom: 0;
+}
+
+.my-resume h2 + a p{
+    text-transform: uppercase;
+    color: rgb(146, 223, 146);
+    font-size: 1.1rem;
+}
+
+.my-resume h2 + a p:hover{
+    text-shadow: 1px 1px 5px rgb(146, 223, 146);
+    transition: 1s ease;
 }
 
 .my-resume::before{
@@ -707,5 +718,9 @@ footer p{
 }
 
 .destaque-experiencias{
+    display: none;
+}
+
+.drowpdown{
     display: none;
 }
