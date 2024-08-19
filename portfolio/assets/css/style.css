@@ -363,7 +363,7 @@ footer{
 
 .bg-green{
     height: 40vh;
-    background: linear-gradient(black 5%, transparent), white;
+    background: linear-gradient(black 5%, transparent), rgb(105, 184, 105);
 }
 
 .footer-img-bg{
