@@ -34,19 +34,21 @@
                     <a href="#"><img src="/portfolio/assets/pics/icons8-instagram-96.png" alt="Instagram logo"></a>
                 </div>
             </div>
-            <div class="main-page-content scrolling">
-                <a href="">Scroll More</a>
+            <a href="#about-page">
+                <div class="main-page-content scrolling">
+                <p>Scroll More</p>
             </div>
+            </a>
             <div class="main-page-title">
                 <h1>PORTFOLIO</h1>
             </div>
         </section>
 
         <div class="side-spaces">
-            <section class="about">
+            <section class="about" id="about-page">
                 <div class="column-align">
                     <div class="row-align right-align">
-                        <h2>About</h2>
+                        <a href="/about-page.html"><h2>About</h2></a>
                     </div>
                     <div class="row-align right-align"></div>
                 </div>
@@ -105,16 +107,80 @@
         <section class="display-project-pic"></section>
 
         <div class="side-spaces">
-            <section class="projects-navigation">
-                <div class="project-display"></div>
-                <div class="project-display"></div>
-                <div class="project-display"></div>
-                <div class="project-display"></div>
-                <div class="project-display"></div>
+            <section class="projects-navigation" id="projects-navigation">
+                <div class="project-display">
+                    <img src="/portfolio/assets/pics/projects/3.png" alt="">
+                </div>
+                <div class="project-display">
+                    <img src="/portfolio/assets/pics/projects/cv.png" alt="">
+                </div>
+                <div class="project-display"> 
+                    <img src="/portfolio/assets/pics/projects/DIO-css-clone.png" alt="">
+                </div>
+                <div class="project-display">
+                    <img src="/portfolio/assets/pics/projects/discord-clone.png" alt="">
+                </div>
+                <div class="project-display">
+                    <img src="/portfolio/assets/pics/projects/pokedex.png" alt="">
+                </div>
+                <div class="project-display">
+                    <img src="/portfolio/assets/pics/projects/wikipedia1.png" alt="">
+                </div>
+                <div class="project-display">
+                    <img src="/portfolio/assets/pics/projects/youtube-clone.png" alt="">
+                </div>
+                <div class="project-display"> 
+                    <img src="/portfolio/assets/pics/projects/youtube-search-clone.png" alt="">
+                </div>
+                
+
+                <a class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </section>
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="bg-green"></div>
+        <div class="footer-img-bg">
+            <a href="/contact-me.html"><h2>contact me</h2></a>
+            <nav class="footer-nav">
+                <ul class="navigation-content">
+                    <a href="#"><li>About me</li></a>
+                    <a href="#"><li>My Works</li></a>
+                    <a href="#"><li>Contact Me</li></a>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n){
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n){
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n){
+            let i;
+            let slides = document.getElementsByClassName("project-display");
+            if(n >slides.length){
+                slideIndex = 1;
+            }
+            if(n < 1){
+                slideIndex = slides.length;
+            }
+
+            for(i = 0; i < slides.length; i++){
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
 </body>
 </html>

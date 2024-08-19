@@ -6,6 +6,12 @@ body, a {
 *{
     color: white;
     font-family: roboto;
+    box-sizing: border-box;
+}
+
+*::selection{
+    background-color: rgb(59, 165, 59);
+    color: black;
 }
 
 main{
@@ -40,12 +46,32 @@ header{
 }
 
 .logo p{
+    overflow: hidden;
+    border-right: .10em solid rgb(59, 165, 59);
+    white-space: nowrap;
     font-size: 3rem;
     font-family: zeyada;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
     text-transform: lowercase;
-    margin: 0;
+    margin: 0 auto;
     font-weight: normal;
+    animation: typingEffect 3s steps(20,end), cursorEffect .65s step-end infinite;
+}
+
+@keyframes typingEffect {
+    from{
+        width: 0;
+    } to {
+        width: 100%;
+    }
+}
+
+@keyframes cursorEffect {
+    from, to {
+        border-color: transparent;
+    } 50% {
+        border-color: rgb(59, 165, 59);
+    }
 }
 
 .navigation-content{
@@ -64,6 +90,12 @@ header{
     font-size: 1.2rem;
     color: #e0dddd;
     font-weight: normal;
+}
+
+.navigation-content li:hover{
+    color: black;
+    background-color: white;
+    transition: 2s ease;
 }
 
 .main-page{
@@ -109,7 +141,7 @@ header{
     margin-right: 5rem;
 }
 
-.scrolling a{
+.scrolling p{
     font-family: kaushan;
 }
 
@@ -268,13 +300,116 @@ header{
 }
 
 .projects-navigation{
-    height: 40vh;
-    padding-top: 5rem;
+    padding: 10rem 0 10rem 0;
     display: flex;
+    max-width: 1000px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-display{
-    width: 300px;
-    height: 300px;
+    display: none;
+    height: fit-content;
+    animation: fade 1.5s;
+}
+
+.project-display img {
+    object-fit: cover;
     border-radius: 50px;
+    max-height: 500px;
+    max-width: 1000px;
+}
+
+.previous, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 80%;
+    width: auto;
+    margin-top: -22px;
+    padding: 1rem;
+    color: rgb(105, 184, 105);
+    border: 1px solid rgb(105, 184, 105);
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 2rem;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.previous:hover, .next:hover{
+    background-color: rgba(59, 165, 59, 0.8);
+}
+
+.next {
+    right: -15%;
+}
+
+.previous{
+    left: -10%;
+}
+
+@keyframes fade {
+    from{
+        opacity: .4;
+    } to{
+        opacity: 1;
+    }
+}
+
+footer{
+    height: 100vh;
+}
+
+.bg-green{
+    height: 40vh;
+    background: linear-gradient(black 5%, transparent), white;
+}
+
+.footer-img-bg{
+    height: 60vh;
+    background: linear-gradient(black, transparent), url('/portfolio/assets/pics/background-main-page.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.footer-img-bg h2{
+    position: absolute;
+    top: -41%;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 17rem;
+    letter-spacing: 1rem;
+    background: linear-gradient(transparent, black 70%), url(/portfolio/assets/pics/background-main-page.png);
+    background-size: contain;
+    background-position: top;
+    background-clip: text;
+    color: transparent;
+    filter: brightness(2);
+    font-weight: 600;
+    margin-left: 8rem;
+}
+
+.footer-nav{
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.footer-nav > .navigation-content{
+    width: 100%;
+    justify-content: space-around;
+}
+
+.footer-nav > .navigation-content li {
+    font-size: 1.5rem;
+}
+
+.footer-nav > .navigation-content li:hover{
+    color: white;
+    background-color: transparent;
 }
