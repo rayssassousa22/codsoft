@@ -121,13 +121,15 @@ header{
 }
 
 .social-media-links{
+    margin: 0;
     margin-left: 2rem;
 }
 
 .social-media-links img {
-    width: 30px;
+    width: 50px;
     margin-right: 1rem;
-    background-color: #6d6b6b;
+    background-color: transparent;
+    border: 1px solid rgb(59, 165, 59);
     padding: .8rem;
     border-radius: 50%;
 }
@@ -412,4 +414,294 @@ footer{
 .footer-nav > .navigation-content li:hover{
     color: white;
     background-color: transparent;
+}
+
+.intro-section{
+    height: fit-content;
+    display: flex;
+    padding: 5rem 0;
+    background-color: rgba(59, 165, 59, 0.5);
+}
+
+.organize-page{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.organize-page h1{
+    text-transform: uppercase;
+    font-weight: normal;
+    font-weight: normal;
+    font-size: 3rem;
+}
+
+#bold-destaque{
+    color: rgb(146, 223, 146);
+    font-weight: bold;
+}
+
+.agrupacao-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.personal-info{
+    width: 20%;
+    margin-right: 5rem;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+}
+
+.personal-info p, .personal-info-label h2, .about-text h2, .about-text p{
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+.personal-info-label h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.about-text{
+    width: 30%;
+    text-align: left;
+}
+
+.my-resume {
+    flex-direction: column;
+    position: relative;
+    z-index: 0;
+    background-color: rgba(59, 165, 59, 0.5);
+    text-align: center;
+}
+
+.my-resume h2{
+    font-size: 3rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 10rem;
+}
+
+.my-resume::before{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(146, 223, 146);
+    transform: rotate(90deg);
+    z-index: -1;
+    display: block;
+    margin-top: 5rem;
+    margin-right: 1rem;
+}
+
+.resume-timeline{
+    text-align: center;
+}
+
+.resume-timeline h3{
+    text-transform: uppercase;
+    background-color: #f1f1f1;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: black;
+    border-radius: 10px;
+    font-weight: normal;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+
+.experience-card{
+    display: flex;
+}
+.experience-left, .blank-space, .experience-right {
+    width: 100%;
+}
+.experience-left, .experience-right{
+    margin: 3.5rem 0;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.experience-left + .blank-space {
+    margin: 0;
+    margin-right: 7rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.experience-left, .blank-space{
+    width: 100%;
+}
+
+.experience-left {
+    text-align: right;
+    margin: 4.5rem 0;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding-right: 2rem;
+}
+
+.experience-left h4, .experience-left p, .experience-right h4, .experience-right p {
+    font-family: monospace;
+    letter-spacing: 2px;
+}
+
+.experience-left h4, .experience-right h4 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+
+.experience-left p + p, .experience-right p + p {
+    width: 60%;
+    line-height: 1.5;
+}
+
+.experience-right {
+    text-align: left;
+    align-items: flex-start;
+    padding-left: 2rem;
+}
+
+.my-skills{
+    text-align: center;
+    padding: 10rem 0;
+}
+
+.my-skills h2{
+    color: white;
+    font-family: monospace;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.grid-align-skills{
+    height: 100%;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid white;
+}
+
+.grid-skills{
+    height: 50%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: repeat(3, 1FR);
+    padding-top: 5rem;
+}
+
+.skill-set{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.progress-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress-header h3{
+    margin: 0;
+    text-align: left;
+    margin-bottom: 2rem;
+    font-family: monospace;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+.progress-header p{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-family: monospace;
+}
+
+.progress-bar-bg{
+    margin-left: auto;
+    margin-right: auto;
+    height: 5px;
+    background-color: rgba(245, 245, 245, 0.8);
+    border-radius: 20px;
+}
+
+.progress-bar-animation{
+    transition: all .5s ease-in;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.25) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 75%, transparent 75%, transparent);
+    background-size: 40px 40px;
+    animation: progress-stripes 2s linear infinite;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.purple-width{
+    width: 15%;
+    background-color: purple;
+}
+
+.blue-width{
+    width: 90%;
+    background-color: blue;
+}
+
+.green-width{
+    width: 100%;
+    background-color: rgb(17, 156, 17);
+}
+
+@keyframes progress-stripes{
+    0%{
+        background-position: 40px 0;
+    } 100%{
+        background-position: 0 0;
+    }
+}
+
+.normal-footer{
+    background-color: black;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+    border-top: 1px solid rgb(59, 165, 59);
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+footer h4{
+    text-transform: uppercase;
+    color: rgb(59, 165, 59);
+    margin: 1rem 0;
+}
+
+footer p{
+    margin: 0;
+    color: rgb(59, 165, 59);
+}
+
+#destaque{
+    color: white;
+    cursor: pointer;
 }
