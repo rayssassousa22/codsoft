@@ -705,3 +705,7 @@ footer p{
     color: white;
     cursor: pointer;
 }
+
+.destaque-experiencias{
+    display: none;
+}

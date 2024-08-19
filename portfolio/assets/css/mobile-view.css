@@ -1,0 +1,163 @@
+@media (max-width: 1024px){
+    body{
+        margin: 0;
+    }
+    header{
+        width: 100%;
+    }
+    .align-header-content{
+        width: 100%;
+    }
+    .text-content p{
+        font-size: 1rem;
+    }
+    .main-page-title{
+        text-align: center;
+        height: fit-content;
+    }
+
+    .main-page-title h1{
+        font-size: 10rem;
+    }
+
+    .side-spaces{
+        width: 100%;
+    }
+
+    .about, .works, .galery{
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        height: fit-content;
+    }
+
+    .right-align h2{
+        font-size:8rem;
+        margin-right: 2rem;
+    }
+
+    .left-align button, .right-align button, .row-align-block button {
+        background-color: transparent;
+        border: 1px solid rgb(105, 184, 105);
+        color: rgb(59, 165, 59);
+        border-radius: 50px;
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+        font-family: kaushan;
+        margin-right: 10rem;
+    }
+    .align-text-left p, .align-text-right p {
+        font-size: 1.3rem;
+        font-weight: 100;
+        margin: 0;
+        color: rgb(59, 165, 59);
+        margin-top: 2rem;
+        width: 80%;
+    }
+
+    .divisor{
+        display: none;
+    }
+
+    .works, .galery{
+        margin-right: 5rem;
+    }
+    .project-display{
+        padding-left: 7rem;
+    }
+
+    .project-display img{
+        max-width: 85%;
+    }
+    .display-project-pic{
+        background-size: contain;
+    }
+
+    .previous, .next{
+        font-size: 1rem;
+    }
+
+    .previous{
+        left: 5%;
+    }
+
+    .next{
+        right: 5%;
+    }
+
+    .projects-navigation{
+        padding: 0;
+    }
+
+    .footer-img-bg h2{
+        position: static;
+        font-size: 8rem;
+        margin-left: 0;
+        margin-right: 2rem;
+        background: url('/portfolio/assets/pics/background-main-page.png');
+        background-size: contain;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 11px 12px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-nav > .navigation-content li {
+        font-size: 1rem;
+    }
+
+    .display-project-pic{
+        height: 75vh;
+    }
+
+    .bg-green{
+        height: 20vh;
+        background-color: black;
+    }
+
+    .footer-img-bg{
+        position: static;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer{
+        height: fit-content;
+    }
+
+    .about-text{
+        font-size: 1rem;
+        margin-top: 3rem;
+        width: 70%;
+    }
+
+    .agrupacao-info{
+        flex-wrap: wrap;
+    }
+
+    .my-resume h2{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .my-resume::before{
+        content: " ";
+        height: 0;
+    }
+
+    .experience-card .blank-space{
+        width: 10%;
+        margin-right: 0;
+    }
+
+    .resume-timeline h3::before{
+        content: " ";
+        height: 1px;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        margin-top: 10px;
+        z-index: -1;
+    }
+}
