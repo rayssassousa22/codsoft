@@ -163,7 +163,7 @@ header{
 }
 
 .main-page-title h1{
-    font-size: 22rem;
+    font-size: 15rem;
     letter-spacing: 1rem;
     margin: 0;
     background: url('/portfolio/assets/pics/background-main-page.png');
@@ -187,7 +187,7 @@ header{
 }
 
 .about{
-    margin-bottom: 10rem;
+    margin-bottom: 15rem;
 }
 .galery{
     padding: 0;
@@ -202,6 +202,7 @@ header{
 
 .works{
     margin-right: 10rem;
+    margin-bottom: 5rem;
 }
 
 .column-align {
@@ -311,7 +312,6 @@ header{
 }
 
 .project-display{
-    display: none;
     height: fit-content;
     animation: fade 1.5s;
 }
@@ -344,7 +344,7 @@ header{
 }
 
 .next {
-    right: -15%;
+    right: -10%;
 }
 
 .previous{
@@ -382,10 +382,10 @@ footer{
 
 .footer-img-bg h2{
     position: absolute;
-    top: -41%;
+    top: -35%;
     margin: 0;
     text-transform: uppercase;
-    font-size: 17rem;
+    font-size: 15rem;
     letter-spacing: 1rem;
     background: linear-gradient(transparent, black 70%), url(/portfolio/assets/pics/background-main-page.png);
     background-size: contain;
@@ -722,5 +722,9 @@ footer p{
 }
 
 .drowpdown{
+    display: none;
+}
+
+.box{
     display: none;
 }

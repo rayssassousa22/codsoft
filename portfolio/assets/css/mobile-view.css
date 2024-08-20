@@ -1,168 +1,7 @@
-@media (max-width: 1024px){
-    body{
-        margin: 0;
-    }
-    header{
-        width: 100%;
-    }
-    .align-header-content{
-        width: 100%;
-    }
-    .text-content p{
-        font-size: 1rem;
-    }
-    .main-page-title{
-        text-align: center;
-        height: fit-content;
-    }
 
-    .main-page-title h1{
-        font-size: 10rem;
-    }
 
-    .side-spaces{
-        width: 100%;
-    }
 
-    .about, .works, .galery{
-        padding-top: 0;
-        padding-bottom: 0;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
-        height: fit-content;
-    }
-
-    .right-align h2{
-        font-size:8rem;
-        margin-right: 2rem;
-    }
-
-    .left-align button, .right-align button, .row-align-block button {
-        background-color: transparent;
-        border: 1px solid rgb(105, 184, 105);
-        color: rgb(59, 165, 59);
-        border-radius: 50px;
-        font-size: 1.5rem;
-        padding: 1rem 1.5rem;
-        font-family: kaushan;
-        margin-right: 10rem;
-    }
-    .align-text-left p, .align-text-right p {
-        font-size: 1.3rem;
-        font-weight: 100;
-        margin: 0;
-        color: rgb(59, 165, 59);
-        margin-top: 2rem;
-        width: 80%;
-    }
-
-    .divisor{
-        display: none;
-    }
-
-    .works, .galery{
-        margin-right: 5rem;
-    }
-    .project-display{
-        padding-left: 7rem;
-    }
-
-    .project-display img{
-        max-width: 85%;
-    }
-    .display-project-pic{
-        background-size: contain;
-    }
-
-    .previous, .next{
-        font-size: 1rem;
-    }
-
-    .previous{
-        left: 5%;
-    }
-
-    .next{
-        right: 5%;
-    }
-
-    .projects-navigation{
-        padding: 0;
-    }
-
-    .footer-img-bg h2{
-        position: static;
-        font-size: 8rem;
-        margin-left: 0;
-        margin-right: 2rem;
-        background: url('/portfolio/assets/pics/background-main-page.png');
-        background-size: contain;
-        background-clip: text;
-        color: transparent;
-        text-shadow: 11px 12px 10px rgba(255, 255, 255, 0.1);
-    }
-
-    .footer-nav > .navigation-content li {
-        font-size: 1rem;
-    }
-
-    .display-project-pic{
-        height: 75vh;
-    }
-
-    .bg-green{
-        height: 20vh;
-        background-color: black;
-    }
-
-    .footer-img-bg{
-        position: static;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    footer{
-        height: fit-content;
-    }
-
-    .about-text{
-        font-size: 1rem;
-        margin-top: 3rem;
-        width: 70%;
-    }
-
-    .agrupacao-info{
-        flex-wrap: wrap;
-    }
-
-    .my-resume h2{
-        margin: 0;
-        margin-bottom: 1rem;
-    }
-
-    .my-resume::before{
-        content: " ";
-        height: 0;
-    }
-
-    .experience-card .blank-space{
-        width: 10%;
-        margin-right: 0;
-    }
-
-    .resume-timeline h3::before{
-        content: " ";
-        height: 1px;
-        background-color: white;
-        width: 100%;
-        position: absolute;
-        right: 0;
-        margin-top: 10px;
-        z-index: -1;
-    }
-}
-
-@media (max-width:450px){
+@media (max-width:849px){
     .drowpdown{
         position: relative;
         display: inline-block;
@@ -181,7 +20,7 @@
         margin-right: 2rem;
     }
 
-    nav{
+    header nav{
         display: none;
     }
 
@@ -294,5 +133,455 @@
 
     .display-project-pic{
         display: none;
+    }
+
+    .projects-navigation{
+        display: none;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        position: relative;
+        background-color: rgba(59, 165, 59, 0.7);
+        padding: 3rem 0;
+    }
+
+    .cards-projects{
+        height: 100%;
+        width: 100%;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 3rem;
+        align-items: center;
+    }
+
+    .cards{
+        height: 300px;
+        width: 300px;
+        border-radius: 50px;
+        background-color: white;
+        position: relative;
+        z-index: 1;
+        perspective: 1000px;
+
+
+        &:hover .card1, &:hover .card2, &:hover .card3{
+            transform: rotateX(9deg) translateY(-26px);
+
+            &::after{
+                transform: translateY(0%);
+            }
+        } 
+
+        &::before{
+            display: block;
+            content: "";
+            position: absolute;
+            top: 5%;
+            width: 90%;
+            height: 90%;
+            background: rgb(0,0,0, 0.5);
+            border-radius: 50px;
+            will-change: opacity;
+            transform-origin: top center;
+            transform: skewX(.001deg);
+            transition: transform .35s ease-in-out, opacity .5s ease-in-out;
+        }
+
+        &:hover::before{
+            opacity: 1;
+            transform: rotateX(9deg) translateY(-10px) scale(1.15);
+        }
+    }
+
+    .card1, .card2, .card3{
+        border-radius: 50px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        perspective-origin: 50% 50%;
+        transform-style: preserve-3d;
+        transform-origin: top center;
+        will-change: transform;
+        transform: skewX(.001deg);
+        transition: transform .35s ease-in-out;
+
+        &::after{
+            display: block;
+            content: "";
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120%;
+            background: linear-gradient(226deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 35%, rgba(255,255,255,0.2) 42%, rgba(255,255,255,0) 60%);
+            transform: translateY(-30%);
+            will-change: transform;
+            transition: transform .65s cubic-bezier(0.18, 0.9, 0.58, 1);
+        }
+    }
+
+    .card1{
+        background: url('/portfolio/assets/pics/pokedex.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card2{
+        background: url('/portfolio/assets/pics/portfolio.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card3{
+        background: url('/portfolio/assets/pics/discord-clone.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #more-projects{
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        font-size: 2rem;
+        font-family: kaushan;
+        bottom: -150px;
+        border-radius: 50px;
+        padding: 1rem 2rem;
+        left: 30%;
+        margin: 3rem 0;
+    }
+
+    #more-projects:hover{
+        background-color: white;
+        border: 0;
+        color: rgb(59, 165, 59);
+        transition: 1s ease;
+        cursor:pointer;
+    }
+
+    .bg-green{
+        height: 10vh;
+    }
+
+    .footer-img-bg{
+        align-items: center;
+    }
+
+    .footer-img-bg h2{
+        font-size: 3rem;
+        margin: 0;
+    }
+
+    .footer-nav > .navigation-content li{
+        color: rgb(179, 174, 174);
+    }
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px){
+    body{
+        margin: 0;
+    }
+    header{
+        width: 100%;
+    }
+    .align-header-content{
+        width: 100%;
+    }
+    .text-content p{
+        font-size: 1.5rem;
+        width: 20%;
+    }
+    .main-page-title{
+        text-align: center;
+        height: 30%;
+    }
+
+    .main-page-title h1{
+        font-size: 10rem;
+        margin-bottom: 5rem;
+    }
+
+    .main-page-content{
+        height: 30%;
+    }
+
+    .side-spaces{
+        width: 100%;
+    }
+
+    .about, .works, .galery{
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        height: fit-content;
+    }
+
+    .right-align h2{
+        font-size:8rem;
+        margin-right: 2rem;
+    }
+
+    .left-align button, .right-align button, .row-align-block button {
+        background-color: transparent;
+        border: 1px solid rgb(105, 184, 105);
+        color: rgb(59, 165, 59);
+        border-radius: 50px;
+        font-size: 1.5rem;
+        padding: 1rem 1.5rem;
+        font-family: kaushan;
+        margin-right: 10rem;
+    }
+    .align-text-left p, .align-text-right p {
+        font-size: 1.3rem;
+        font-weight: 100;
+        margin: 0;
+        color: rgb(59, 165, 59);
+        margin-top: 2rem;
+        width: 80%;
+    }
+
+    .divisor{
+        display: none;
+    }
+
+    .works, .galery{
+        margin-right: 5rem;
+    }
+
+    .project-display img{
+        max-width: 75%;
+    }
+    .display-project-pic{
+        background-size: contain;
+    }
+
+    .previous, .next{
+        font-size: 1rem;
+    }
+
+    .previous{
+        left: 5%;
+        top: 95%;
+    }
+
+    .next{
+        right: 5%;
+        top: 95%;
+    }
+
+    .projects-navigation{
+        padding: 5rem 0;
+    }
+
+    .footer-img-bg h2{
+        position: static;
+        font-size: 8rem;
+        margin-left: 0;
+        margin-right: 2rem;
+        background: url('/portfolio/assets/pics/background-main-page.png');
+        background-size: contain;
+        background-clip: text;
+        color: transparent;
+        text-shadow: 11px 12px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-nav > .navigation-content li {
+        font-size: 1rem;
+    }
+
+    .display-project-pic{
+        height: 75vh;
+    }
+
+    .bg-green{
+        height: 20vh;
+        background-color: black;
+    }
+
+    .footer-img-bg{
+        padding-top: 5rem;
+        position: static;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    footer{
+        height: fit-content;
+    }
+
+    .about-text{
+        font-size: 1rem;
+        margin-top: 3rem;
+        width: 70%;
+    }
+
+    .agrupacao-info{
+        flex-wrap: wrap;
+    }
+
+    .my-resume h2{
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .my-resume::before{
+        content: " ";
+        height: 0;
+    }
+
+    .experience-card .blank-space{
+        width: 10%;
+        margin-right: 0;
+    }
+
+    .resume-timeline h3::before{
+        content: " ";
+        height: 1px;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        margin-top: 10px;
+        z-index: -1;
+    }
+}
+
+@media only screen and (min-width: 850px) and (max-width:999px){
+    header{
+        width: 100%;
+    }
+
+    .main-page{
+        width: 100%;
+    }
+
+    .text-content{
+        height: fit-content;
+    }
+
+    .main-page-content{
+        height: 10%;
+    }
+
+    .text-content p{
+        width: 50%;
+    }
+
+    .main-page-title{
+        height: 50%;
+        display: flex;
+        align-items: end;
+        justify-content: center;
+    }
+
+    .main-page-title h1{
+        font-size: 7rem;
+    }
+
+    .side-spaces{
+        width: 100%;
+    }
+
+    .about, .works, .galery{
+        height: fit-content;
+        padding: 0;
+        margin-bottom: 5rem;
+    }
+
+    .about .right-align h2{
+        font-size: 7rem;
+        margin-left: 3rem;
+    }
+
+    .column-align > .right-align{
+        justify-content: flex-end;
+        margin-right: 5rem;
+    }
+
+    .left-align button, .row-align-block button{
+        margin: 0;
+        margin-right: 5rem;
+        margin-top: 3rem;
+    }
+
+    .align-text-left p, .align-text-right p{
+        font-size: 1.2rem;
+        width: 90%;
+        text-align: center;
+    }
+
+    .divisor{
+        display: none;
+    }
+
+    .works{
+        margin: 3rem 0;
+    }
+
+    .right-align h2{
+        font-size: 7rem;
+        margin: 0;
+    }
+
+    .galery{
+        margin: 3rem 0;
+    }
+
+    .galery .align-text-right p{
+        margin-left: 2rem;
+    }
+
+    .project-display{
+        display: flex;
+        justify-content: center;
+    }
+
+    .project-display img {
+        object-fit: cover;
+        border-radius: 50px;
+        max-width: 80%;
+    }
+
+    .previous{
+        left: 5%;
+    }
+
+    .next{
+        right: 5%;
+    }
+
+    .bg-green{
+        display: none;
+    }
+
+    footer{
+        height: fit-content;
+    }
+
+    .footer-img-bg h2{
+        position: static;
+        margin: 0;
+        font-size: 5rem;
+        text-shadow: -6px 0px 9px rgba(255, 255, 255, 0.1);
+    }
+
+    .footer-img-bg{
+        padding-top: 3rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
 }
