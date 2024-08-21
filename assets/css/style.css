@@ -100,8 +100,6 @@ header{
 
 .main-page{
     height: 100vh;
-    background: linear-gradient(black 5%, transparent, black 90%), url('assets/projects/background-main-page.png');
-    background-size: cover;
     display: flex;
     flex-direction: column;
 }
@@ -295,6 +293,7 @@ header{
 }
 
 .display-project-pic{
+    display: none;
     height: 85vh;
     background: url('assets/projects//frameworks.png');
     background-size: cover;
@@ -312,14 +311,17 @@ header{
 }
 
 .project-display{
-    height: fit-content;
+    width: 100%;
+    height: 800px;
     animation: fade 1.5s;
+    justify-content: center;
 }
 
 .project-display img {
     object-fit: cover;
+    object-position: center ;
     border-radius: 50px;
-    max-height: 500px;
+    max-height: 700px;
     max-width: 1000px;
 }
 
@@ -360,39 +362,31 @@ header{
 }
 
 footer{
-    height: 100vh;
+    height: fit-content;
 }
 
 .bg-green{
+    display: none;
     height: 40vh;
     background: linear-gradient(black 5%, transparent), rgb(67, 182, 67);
 }
 
 .footer-img-bg{
     height: 60vh;
-    background: linear-gradient(black, transparent), url('assets/projects/background-main-page.png');
-    background-size: cover;
-    background-position: center;
     position: relative;
     text-align: center;
     display: flex;
-    justify-content: end;
-    align-items: end;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .footer-img-bg h2{
-    position: absolute;
-    top: -35%;
     margin: 0;
     text-transform: uppercase;
-    font-size: 15rem;
+    font-size: 10rem;
     letter-spacing: 1rem;
-    background: linear-gradient(transparent, black 70%), url('assets/projects/background-main-page.png');
-    background-size: contain;
-    background-position: top;
-    background-clip: text;
-    color: transparent;
-    filter: brightness(2);
+    filter: brightness(3);
     font-weight: 600;
     margin-left: 8rem;
 }
@@ -1043,7 +1037,6 @@ form input::placeholder, textarea::placeholder{
 }
 
 button{
-    width: 100%;
     padding: 1rem 0;
     background-color: white;
     border: 0;

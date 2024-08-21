@@ -36,7 +36,7 @@
     </header>
 
     <main>
-        <section class="main-page">
+        <section class="main-page" style="background: linear-gradient(black 5%, transparent, black 90%), url('assets/projects/background-main-page.png'); background-size: cover;">
             <div class="main-page-content"></div>
             <div class="main-page-content text-content">
                 <p>Web development is the art of turning ideas into interactive and dynamic experiences, connecting the world through code and creativity</p>
@@ -121,28 +121,28 @@
         <div class="side-spaces">
             <section class="projects-navigation" id="projects-navigation">
                 <div class="project-display">
-                    <img src="assets/projects/projects/3.png" alt="">
+                    <img src="assets/projects/3.png" alt="">
                 </div>
                 <div class="project-display">
-                    <img src="assets/projects/projects/cv.png" alt="">
+                    <img src="assets/projects/cv.png" alt="">
                 </div>
                 <div class="project-display"> 
-                    <img src="assets/projects/projects/DIO-css-clone.png" alt="">
+                    <img src="assets/projects/DIO-css-clone.png" alt="">
                 </div>
                 <div class="project-display">
-                    <img src="assets/projects/projects/discord-clone.png" alt="">
+                    <img src="assets/projects/discord-clone.png" alt="">
                 </div>
                 <div class="project-display">
-                    <img src="assets/projects/projects/pokedex.png" alt="">
+                    <img src="assets/projects/pokedex.png" alt="">
                 </div>
                 <div class="project-display">
-                    <img src="assets/projects/projects/wikipedia1.png" alt="">
+                    <img src="assets/projects/wikipedia1.png" alt="">
                 </div>
                 <div class="project-display">
-                    <img src="assets/projects/projects/youtube-clone.png" alt="">
+                    <img src="assets/projects/youtube-clone.png" alt="">
                 </div>
                 <div class="project-display"> 
-                    <img src="assets/projects/projects/youtube-search-clone.png" alt="">
+                    <img src="assets/projects/youtube-search-clone.png" alt="">
                 </div>
                 
 
@@ -170,8 +170,12 @@
 
     <footer>
         <div class="bg-green"></div>
-        <div class="footer-img-bg">
-            <a href="contact-me.html"><h2>contact me</h2></a>
+        <div class="footer-img-bg" style="background: linear-gradient(black, transparent), url('assets/projects/background-main-page.png');
+        background-size: cover;
+        background-position: center;">
+            <a href="contact-me.html"><h2 style="background: url('assets/projects/background-main-page.png'); background-size: contain; background-position: top;
+                background-clip: text;
+                color: transparent;">contact me</h2></a>
             <nav class="footer-nav">
                 <ul class="navigation-content">
                     <a href="about-page.html"><li>About me</li></a>
@@ -207,7 +211,7 @@
             for(i = 0; i < slides.length; i++){
                 slides[i].style.display = "none";
             }
-            slides[slideIndex-1].style.display = "block";
+            slides[slideIndex-1].style.display = "flex";
         }
     </script>
 </body>
