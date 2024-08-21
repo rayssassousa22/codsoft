@@ -131,7 +131,7 @@
         font-size: 8rem;
         margin-left: 0;
         margin-right: 2rem;
-        background: url('/portfolio/assets/pics/background-main-page.png');
+        background: url('assets/projects/background-main-page.png');
         background-size: contain;
         background-clip: text;
         color: transparent;
@@ -707,19 +707,19 @@
     }
 
     .card1{
-        background: url('/portfolio/assets/pics/pokedex.png');
+        background: url('assets/projects/pokedex.png');
         background-size: cover;
         background-position: center;
     }
 
     .card2{
-        background: url('/portfolio/assets/pics/portfolio.png');
+        background: url('assets/projects/portfolio.png');
         background-size: cover;
         background-position: center;
     }
 
     .card3{
-        background: url('/portfolio/assets/pics/discord-clone.png');
+        background: url('assets/projects/discord-clone.png');
         background-size: cover;
         background-position: center;
     }
@@ -764,7 +764,7 @@
         font-size: 3rem;
         margin: 0;
         position: static;
-        background: url('/portfolio/assets/pics/background-main-page.png');
+        background: url('assets/projects/background-main-page.png');
         background-size: contain;
         background-position: top;
         background-clip: text;
