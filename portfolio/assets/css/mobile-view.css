@@ -210,6 +210,39 @@
         font-size: 7rem;
     }
 
+    .my-resume::before{
+        content: "";
+        height: 0px;
+    }
+
+    .resume-timeline h3::before{
+        content: " ";
+        height: 1px;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        margin-top: 10px;
+        z-index: -1;
+    }
+
+
+    .agrupacao-info{
+        flex-wrap: wrap;
+    }
+
+    .about-text{
+        width: 70%;
+    }
+
+    .blank-space, .experience-left + .blank-space{
+        width: 5%;
+        margin-right: 1rem;
+    }
+    .experience-left p + p, .experience-right p + p{
+        font-size: 1.1rem;
+    }
+
     .side-spaces{
         width: 100%;
     }
@@ -621,4 +654,36 @@
         color: rgb(179, 174, 174);
     }
 
+    .agrupacao-info{
+        flex-wrap: wrap;
+    }
+
+    .about-text{
+        width: 70%;
+    }
+
+    .my-resume::before{
+        content: "";
+        height: 0px;
+    }
+
+    .blank-space, .experience-left + .blank-space{
+        width: 5%;
+        margin-right: 1rem;
+    }
+
+    .resume-timeline h3::before{
+        content: " ";
+        height: 1px;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        right: 0;
+        margin-top: 10px;
+        z-index: -1;
+    }
+
+    .experience-left p+ p, .experience-right p+p{
+        width: 80%;
+    }
 }
