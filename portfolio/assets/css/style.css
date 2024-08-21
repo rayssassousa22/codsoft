@@ -907,6 +907,42 @@ footer p{
     font-weight: normal;
 }
 
+.contact-page{
+    height: 90vh;
+    background-color: #f7e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-box{
+    max-width: 1400px;
+    min-width: 300px;
+    width: calc(100% - 20%);
+    height: 80vh;
+    margin: 0 2rem;
+    border: 8px solid rgb(59, 165, 59);
+    border-radius: 40px;
+    display: flex;
+    padding: 1.5rem;
+    background-color: #f7f7f7;
+}
+
+.section-two, .section-one{
+    border-radius: 40px;
+}
+
+.section-one{
+    width: 30%;
+    height: 100%;
+}
+
+.section-two{
+    width: 70%;
+    height: 100%;
+    background-color: rgb(59, 165, 59);
+}
+
 @keyframes movingPic{
     0%{
         transform: scale(0.1);
