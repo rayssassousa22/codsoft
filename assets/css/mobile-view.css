@@ -710,24 +710,6 @@
         }
     }
 
-    .card1{
-        background: url('/assets/projects/pokedex.png');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .card2{
-        background: url('/assets/projects/portfolio.png');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .card3{
-        background: url('/assets/projects/discord-clone.png');
-        background-size: cover;
-        background-position: center;
-    }
-
     #more-projects{
         background-color: transparent;
         border: 1px solid white;

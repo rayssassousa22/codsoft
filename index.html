@@ -6,6 +6,18 @@
     <title>Personal Portfolio | CodSoft</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mobile-view.css">
+
+    <style>
+        .scrolling::after{
+                    content: url('/assets/projects/icons8-ordem-descendente-64.png');
+                    margin-right: 2rem;
+                }
+                
+        .scrolling:hover::after{
+            content: url('/assets/projects/icons8-ordem-descendente-64\ \(1\).png');
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -47,15 +59,7 @@
                 </div>
             </div>
             <a href="#about-page">
-                <div class="main-page-content scrolling" style=".scrolling::after{
-                    content: url('/assets/projects/icons8-ordem-descendente-64.png');
-                    margin-right: 2rem;
-                }
-                
-                .scrolling:hover::after{
-                    content: url('/assets/projects/icons8-ordem-descendente-64\ \(1\).png');
-                    cursor: pointer;
-                }">
+                <div class="main-page-content scrolling">
                 <p>Scroll More</p>
             </div>
             </a>
