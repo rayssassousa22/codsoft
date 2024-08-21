@@ -145,16 +145,6 @@ header{
     font-family: kaushan;
 }
 
-.scrolling::after{
-    content: url('/assets/projects/icons8-ordem-descendente-64.png');
-    margin-right: 2rem;
-}
-
-.scrolling:hover::after{
-    content: url('/assets/projects/icons8-ordem-descendente-64\ \(1\).png');
-    cursor: pointer;
-}
-
 .main-page-title{
     text-align: center;
     height: 5%

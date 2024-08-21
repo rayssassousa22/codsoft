@@ -47,7 +47,15 @@
                 </div>
             </div>
             <a href="#about-page">
-                <div class="main-page-content scrolling">
+                <div class="main-page-content scrolling" style=".scrolling::after{
+                    content: url('/assets/projects/icons8-ordem-descendente-64.png');
+                    margin-right: 2rem;
+                }
+                
+                .scrolling:hover::after{
+                    content: url('/assets/projects/icons8-ordem-descendente-64\ \(1\).png');
+                    cursor: pointer;
+                }">
                 <p>Scroll More</p>
             </div>
             </a>
