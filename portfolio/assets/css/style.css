@@ -942,6 +942,7 @@ footer p{
     font-size: 1.5rem;
     width: fit-content;
     margin: 0;
+    animation: typingEffect 3s steps(20,end), cursorEffect .35s step-end;
 }
 
 .content-box-text{
@@ -956,8 +957,9 @@ footer p{
 .contact-text h2{
     font-size: 1.1rem;
     margin: 0;
-    font-weight: 600;
+    font-weight: normal;
     letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .contact-text p{
@@ -970,7 +972,7 @@ footer p{
 
 .contact-text span{
     font-size: .925rem;
-    font-weight: bold;
+    font-weight: 600;
     color: rgb(48, 46, 46);
 }
 
@@ -979,20 +981,14 @@ footer p{
     margin-bottom: 2rem;
 }
 
-@keyframes typingEffect {
-    from{
-        width: 0;
-    } to {
-        width: 100%;
-    }
+.contact-page .social-media-links img {
+    padding: .5rem;
+    width: 60px;
+    border-radius: 5px;
 }
 
-@keyframes cursorEffect {
-    from, to {
-        border-color: transparent;
-    } 50% {
-        border-color: rgb(59, 165, 59);
-    }
+.logo{
+    width: fit-content;
 }
 
 
