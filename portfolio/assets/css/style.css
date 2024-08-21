@@ -909,7 +909,7 @@ footer p{
 
 .contact-page{
     height: 90vh;
-    background-color: #f7e8e8;
+    background-color: #fdf8f8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -936,6 +936,65 @@ footer p{
     width: 30%;
     height: 100%;
 }
+
+.section-one .logo p{
+    color: black;
+    font-size: 1.5rem;
+    width: fit-content;
+    margin: 0;
+}
+
+.content-box-text{
+    height: 80%;
+    padding: 2rem 0;
+}
+
+.contact-text h2, .contact-text p, .contact-text span{
+    color: black;
+}
+
+.contact-text h2{
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.contact-text p{
+    margin: 0;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+    font-size: .925rem;
+    color: rgb(66, 66, 66);
+}
+
+.contact-text span{
+    font-size: .925rem;
+    font-weight: bold;
+    color: rgb(48, 46, 46);
+}
+
+.text{
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+@keyframes typingEffect {
+    from{
+        width: 0;
+    } to {
+        width: 100%;
+    }
+}
+
+@keyframes cursorEffect {
+    from, to {
+        border-color: transparent;
+    } 50% {
+        border-color: rgb(59, 165, 59);
+    }
+}
+
 
 .section-two{
     width: 70%;
