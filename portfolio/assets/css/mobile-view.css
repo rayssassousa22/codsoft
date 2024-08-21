@@ -198,6 +198,39 @@
         margin-top: 10px;
         z-index: -1;
     }
+
+    .section-one .social-media-links{
+        margin: 0;
+    }
+
+    .contact-page .social-media-links img{
+        width: 50px;
+        padding: 0;
+        border: 0;
+    }
+
+    .section-two{
+        padding: 3rem;
+    }
+
+    .section-two h1{
+        margin: 0;
+        margin-bottom: 2rem;
+        font-size: 3rem;
+    }
+
+    form input, textarea, form input::placeholder, textarea::placeholder{
+        font-size: .9rem;
+    }
+
+    textarea{
+        height: 70px;
+    }
+
+    button a {
+        font-size: .9rem;
+    }
+    
 }
 
 @media only screen and (min-width: 850px) and (max-width:999px){
@@ -374,6 +407,37 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+    }
+
+    .contact-box{
+        margin: 0;
+        width: calc(100% - 10%);
+    }
+
+    .social-media-links{
+        margin: 0;
+    }
+
+    .contact-page .social-media-links img{
+        width: 50px;
+        border-radius: 50%;
+        padding: .2rem;
+    }
+
+    .section-two{
+        padding: 2rem;
+    }
+
+    .section-two h1{
+        font-size: 2.5rem;
+    }
+
+    form input, textarea, form input::placeholder, textarea::placeholder{
+        font-size: .9rem;
+    }
+
+    button a{
+        font-size: 1rem;
     }
 }
 
@@ -742,5 +806,46 @@
 
     .experience-left p+ p, .experience-right p+p{
         width: 80%;
+    }
+
+    .section-one .logo p{
+        font-size: 1rem;
+        font-weight: bold;
+    }
+
+    .contact-box{
+        margin: 0;
+        width: calc(100% - 5%);
+        height: 90vh;
+    }
+
+    .social-media-links{
+        margin: 0;
+    }
+
+    .contact-page .social-media-links img{
+        padding: .2rem;
+        border-radius: 50%;
+        width: 40px;
+    }
+
+    .section-two{
+        padding: 1.5rem;
+    }
+
+    .section-two h1{
+        font-size: 2.5rem;
+    }
+
+    form input, form input::placeholder, textarea, textarea::placeholder{
+        font-size: .9rem;
+    }
+
+    textarea{
+        height: 80px;
+    }
+
+    button a {
+        font-size: 1rem;
     }
 }

@@ -908,7 +908,7 @@ footer p{
 }
 
 .contact-page{
-    height: 90vh;
+    height: 100vh;
     background-color: #fdf8f8;
     display: flex;
     justify-content: center;
@@ -1045,13 +1045,14 @@ form input::placeholder, textarea::placeholder{
 button{
     width: 100%;
     padding: 1rem 0;
-    background-color: black;
+    background-color: white;
     border: 0;
     border-radius: 10px;
     font-size: 1rem;
 }
 
 button a {
+    color: black;
     font-size: 1.3rem;
     letter-spacing: 2px;
     display: block;
