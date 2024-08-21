@@ -5,7 +5,7 @@ body, a {
 
 *{
     color: white;
-    font-family: roboto;
+    font-family: 'Roboto';
     box-sizing: border-box;
 }
 
@@ -30,27 +30,12 @@ header{
     height: 100%;
 }
 
-@font-face {
-    font-family: roboto;
-    src: url('/assets/fonts/Roboto-Medium.ttf');
-}
-
-@font-face {
-    font-family: zeyada;
-    src: url('/assets/fonts/Zeyada-Regular.ttf');
-}
-
-@font-face {
-    font-family: kaushan;
-    src: url('/assets/fonts/KaushanScript-Regular.ttf');
-}
-
 .logo p{
     overflow: hidden;
     border-right: .10em solid rgb(59, 165, 59);
     white-space: nowrap;
     font-size: 3rem;
-    font-family: zeyada;
+    font-family: 'Zeyada';
     letter-spacing: 5px;
     text-transform: lowercase;
     margin: 0 auto;
@@ -86,7 +71,7 @@ header{
     padding: 1rem;
     list-style: none;
     text-transform: uppercase;
-    font-family: roboto;
+    font-family: 'Roboto';
     font-size: 1.2rem;
     color: #e0dddd;
     font-weight: normal;
@@ -142,7 +127,7 @@ header{
 }
 
 .scrolling p{
-    font-family: kaushan;
+    font-family: 'Kaushan Script';
 }
 
 .main-page-title{
@@ -748,7 +733,7 @@ footer p{
     overflow: hidden;
     height: 55vh;
 
-    font-family: roboto;
+    font-family: 'Roboto';
     transition: .25s;
 
     margin: 0 2rem;
@@ -992,7 +977,7 @@ footer p{
     font-size: 5rem;
     line-height: 1;
     font-weight: normal;
-    font-family: zeyada;
+    font-family: 'Zeyada';
     margin: 3rem 0;
 }
 
