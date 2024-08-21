@@ -1,295 +1,13 @@
 
 
 
-@media (max-width:849px){
-    .drowpdown{
-        position: relative;
-        display: inline-block;
-    }
 
-    .dropbtn img{
-        width: 40px;
-        padding: 0;
-        cursor: pointer;
-    }
 
-    .dropbtn{
-        background-color: transparent;
-        border: 0;
-        padding: 0;
-        margin-right: 2rem;
-    }
-
-    header nav{
-        display: none;
-    }
-
-    .dropdown-content{
-        display: none;
-        position: absolute;
-        left: -200%;
-        background-color: white;
-        min-width: 200px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        margin-top: .5rem;
-    }
-
-    .dropdown-content a li{
-        color: rgb(24, 134, 24);
-        padding: 1rem 1.5rem;
-        text-decoration: none;
-        display: block;
-        text-transform: uppercase;
-        font-weight: bold;
-        letter-spacing: 2px;
-    }
-
-    .dropdown-content a:hover{
-        background-color: rgb(59, 165, 59);
-    }
-
-    .drowpdown:hover .dropdown-content{
-        display: block;
-    }
-
-    .logo p{
-        font-size: 1.7rem;
-    }
-
-    .main-page{
-        background-size: cover;
-        background-position: center;
-        height: 90vh;
-    }
-
-    .scrolling{
-        height: fit-content;
-        padding-top: 10rem;
-    }
-
-    .text-content p{
-        width: 80%;
-    }
-
-    .scrolling::after, .scrolling p{
-        margin: 0;
-        margin-right: 0;
-    }
-
-    .main-page-title{
-        display: none;
-    }
-
-    .about, .works, .galery{
-        margin: 0;
+@media only screen and (min-width: 1000px) and (max-width: 1800px){
+    .project-display{
         display: flex;
-        flex-direction: column;
-    }
-
-    .column-align{
-        width: 100%;
-    }
-
-    .column-align > .right-align {
         justify-content: center;
-        align-items: center;
-        text-align: center;
     }
-
-    .right-align h2{
-        font-size: 6rem;
-    }
-
-    .about h2{
-        margin-bottom: 3rem;
-    }
-
-    .left-align button, .right-align button, .row-align-block button {
-        margin: 0;
-        font-size: 1.3rem;
-        margin-bottom: 1rem;
-    }
-
-    .column-align > .left-align{
-        text-align: center;
-    }
-
-    .align-text-left p, .align-text-right p {
-        width: 100%;
-        margin: 3rem 2rem;
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .works{
-        padding-top: 3rem;
-    }
-
-    .align-text-right {
-        text-align: center;
-        margin: 1.5rem 0;
-    }
-
-    .display-project-pic{
-        display: none;
-    }
-
-    .projects-navigation{
-        display: none;
-    }
-
-    .box{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: fit-content;
-        position: relative;
-        background-color: rgba(59, 165, 59, 0.7);
-        padding: 3rem 0;
-    }
-
-    .cards-projects{
-        height: 100%;
-        width: 100%;
-        top: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        row-gap: 3rem;
-        align-items: center;
-    }
-
-    .cards{
-        height: 300px;
-        width: 300px;
-        border-radius: 50px;
-        background-color: white;
-        position: relative;
-        z-index: 1;
-        perspective: 1000px;
-
-
-        &:hover .card1, &:hover .card2, &:hover .card3{
-            transform: rotateX(9deg) translateY(-26px);
-
-            &::after{
-                transform: translateY(0%);
-            }
-        } 
-
-        &::before{
-            display: block;
-            content: "";
-            position: absolute;
-            top: 5%;
-            width: 90%;
-            height: 90%;
-            background: rgb(0,0,0, 0.5);
-            border-radius: 50px;
-            will-change: opacity;
-            transform-origin: top center;
-            transform: skewX(.001deg);
-            transition: transform .35s ease-in-out, opacity .5s ease-in-out;
-        }
-
-        &:hover::before{
-            opacity: 1;
-            transform: rotateX(9deg) translateY(-10px) scale(1.15);
-        }
-    }
-
-    .card1, .card2, .card3{
-        border-radius: 50px;
-        position: absolute;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        perspective-origin: 50% 50%;
-        transform-style: preserve-3d;
-        transform-origin: top center;
-        will-change: transform;
-        transform: skewX(.001deg);
-        transition: transform .35s ease-in-out;
-
-        &::after{
-            display: block;
-            content: "";
-            position: absolute;
-            z-index: 100;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 120%;
-            background: linear-gradient(226deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 35%, rgba(255,255,255,0.2) 42%, rgba(255,255,255,0) 60%);
-            transform: translateY(-30%);
-            will-change: transform;
-            transition: transform .65s cubic-bezier(0.18, 0.9, 0.58, 1);
-        }
-    }
-
-    .card1{
-        background: url('/portfolio/assets/pics/pokedex.png');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .card2{
-        background: url('/portfolio/assets/pics/portfolio.png');
-        background-size: cover;
-        background-position: center;
-    }
-
-    .card3{
-        background: url('/portfolio/assets/pics/discord-clone.png');
-        background-size: cover;
-        background-position: center;
-    }
-
-    #more-projects{
-        background-color: transparent;
-        border: 1px solid white;
-        color: white;
-        font-size: 2rem;
-        font-family: kaushan;
-        bottom: -150px;
-        border-radius: 50px;
-        padding: 1rem 2rem;
-        left: 30%;
-        margin: 3rem 0;
-    }
-
-    #more-projects:hover{
-        background-color: white;
-        border: 0;
-        color: rgb(59, 165, 59);
-        transition: 1s ease;
-        cursor:pointer;
-    }
-
-    .bg-green{
-        height: 10vh;
-    }
-
-    .footer-img-bg{
-        align-items: center;
-    }
-
-    .footer-img-bg h2{
-        font-size: 3rem;
-        margin: 0;
-    }
-
-    .footer-nav > .navigation-content li{
-        color: rgb(179, 174, 174);
-    }
-
-}
-
-@media only screen and (min-width: 1000px) and (max-width: 1400px){
     body{
         margin: 0;
     }
@@ -416,6 +134,7 @@
         position: static;
         flex-direction: column;
         justify-content: space-between;
+        align-items: center;
     }
 
     footer{
@@ -584,4 +303,322 @@
         justify-content: space-between;
         align-items: center;
     }
+}
+
+@media only screen and (min-width: 0px) and (max-width:849px){
+    .drowpdown{
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropbtn img{
+        width: 40px;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .dropbtn{
+        background-color: transparent;
+        border: 0;
+        padding: 0;
+        margin-right: 2rem;
+    }
+
+    header nav{
+        display: none;
+    }
+
+    .dropdown-content{
+        display: none;
+        position: absolute;
+        left: -200%;
+        background-color: white;
+        min-width: 200px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin-top: .5rem;
+    }
+
+    .dropdown-content a li{
+        color: rgb(24, 134, 24);
+        padding: 1rem 1.5rem;
+        text-decoration: none;
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+
+    .dropdown-content a:hover{
+        background-color: rgb(59, 165, 59);
+    }
+
+    .drowpdown:hover .dropdown-content{
+        display: block;
+    }
+
+    .logo p{
+        font-size: 1.7rem;
+    }
+
+    .main-page{
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+    }
+
+    .scrolling{
+        height: fit-content;
+        padding-top: 10rem;
+    }
+
+    .text-content p{
+        width: 80%;
+    }
+
+    .scrolling::after, .scrolling p{
+        margin: 0;
+        margin-right: 0;
+    }
+
+    .side-spaces{
+        width: 100%;
+    }
+
+    .main-page-title{
+        display: none;
+    }
+
+    .about, .works, .galery{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin: 2rem 0;
+    }
+
+    .divisor{
+        display: none;
+    }
+
+    .column-align{
+        width: 100%;
+    }
+
+    .column-align > .right-align {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .right-align h2{
+        font-size: 6rem;
+    }
+
+    .about{
+        padding: 0;
+    }
+    .about h2{
+        margin-bottom: 3rem;
+    }
+
+    .left-align button, .right-align button, .row-align-block button {
+        margin: 0;
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .column-align > .left-align{
+        text-align: center;
+    }
+
+    .align-text-left p, .align-text-right p {
+        width: 70%;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .row-align{
+        justify-content: center;
+    }
+
+    .works{
+        padding-top: 3rem;
+    }
+
+    .align-text-right {
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+
+    .display-project-pic{
+        display: none;
+    }
+
+    .projects-navigation{
+        display: none;
+    }
+
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+        position: relative;
+        background-color: rgba(59, 165, 59, 0.7);
+        padding: 3rem 0;
+    }
+
+    .cards-projects{
+        height: 100%;
+        width: 100%;
+        top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 3rem;
+        align-items: center;
+    }
+
+    .cards{
+        height: 300px;
+        width: 300px;
+        border-radius: 50px;
+        background-color: white;
+        position: relative;
+        z-index: 1;
+        perspective: 1000px;
+
+
+        &:hover .card1, &:hover .card2, &:hover .card3{
+            transform: rotateX(9deg) translateY(-26px);
+
+            &::after{
+                transform: translateY(0%);
+            }
+        } 
+
+        &::before{
+            display: block;
+            content: "";
+            color: white;
+            position: absolute;
+            top: 5%;
+            width: 90%;
+            height: 90%;
+            background: rgb(0,0,0, 0.5);
+            border-radius: 50px;
+            will-change: opacity;
+            transform-origin: top center;
+            transform: skewX(.001deg);
+            transition: transform .35s ease-in-out, opacity .5s ease-in-out;
+        }
+
+        &:hover::before{
+            opacity: 1;
+            transform: rotateX(9deg) translateY(-10px) scale(1.15);
+        }
+    }
+
+    .card1, .card2, .card3{
+        border-radius: 50px;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        perspective-origin: 50% 50%;
+        transform-style: preserve-3d;
+        transform-origin: top center;
+        will-change: transform;
+        transform: skewX(.001deg);
+        transition: transform .35s ease-in-out;
+
+        &::after{
+            display: block;
+            content: "";
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 120%;
+            background: linear-gradient(226deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 35%, rgba(255,255,255,0.2) 42%, rgba(255,255,255,0) 60%);
+            transform: translateY(-30%);
+            will-change: transform;
+            transition: transform .65s cubic-bezier(0.18, 0.9, 0.58, 1);
+        }
+    }
+
+    .card1{
+        background: url('/portfolio/assets/pics/pokedex.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card2{
+        background: url('/portfolio/assets/pics/portfolio.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    .card3{
+        background: url('/portfolio/assets/pics/discord-clone.png');
+        background-size: cover;
+        background-position: center;
+    }
+
+    #more-projects{
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        font-size: 2rem;
+        font-family: kaushan;
+        bottom: -150px;
+        border-radius: 50px;
+        padding: 1rem 2rem;
+        left: 30%;
+        margin: 3rem 0;
+    }
+
+    #more-projects:hover{
+        background-color: white;
+        border: 0;
+        color: rgb(59, 165, 59);
+        transition: 1s ease;
+        cursor:pointer;
+    }
+
+    .bg-green{
+        display: none;
+    }
+
+    footer{
+        height: fit-content;
+    }
+
+    .footer-img-bg{
+        align-items: center;
+        position: static;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer-img-bg h2{
+        font-size: 3rem;
+        margin: 0;
+        position: static;
+        background: url('/portfolio/assets/pics/background-main-page.png');
+        background-size: contain;
+        background-position: top;
+        background-clip: text;
+        font-size: 5rem;
+    }
+
+    .footer-nav > .navigation-content li{
+        color: rgb(179, 174, 174);
+    }
+
 }
