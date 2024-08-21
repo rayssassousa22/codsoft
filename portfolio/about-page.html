@@ -150,7 +150,7 @@
             </div>
         </section>
         
-        <section class="chocolate-bg my-skills">
+        <section class="my-skills">
             <h2>Skills</h2>
 
             <div class="grid-align-skills">
@@ -185,6 +185,63 @@
                 </div>
             </div>
         </section>
+
+        <section class="green-bg areas-expertise">
+            <h2>Areas of Expertise</h2>
+
+            <div class="flex-align">
+                <div class="options-box">
+                    <div class="option active" style="background: url('/portfolio/assets/pics/bg-1.jpg');">
+                        <div class="shadow"></div>
+                        <div class="label">
+                            <div class="icon">
+                                <i class="computer"></i>
+                            </div>
+                            <div class="info">
+                                <h3 class="main">Front-End</h3>
+                                <p class="sub">Conhecimento técnico de desenvolvimento web</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option" style="background: url('/portfolio/assets/pics/bg-2.jpg');">
+                        <div class="shadow"></div>
+                        <div class="label">
+                            <div class="icon">
+                                <i class="fas paint"></i>
+                            </div>
+                            <div class="info">
+                                <h3 class="main">Design</h3>
+                                <p class="sub">Conhecimento técnico designs para sites</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option" style="background: url('/portfolio/assets/pics/bg-3.jpg');">
+                        <div class="shadow"></div>
+                        <div class="label">
+                            <div class="icon">
+                                <i class="fas money"></i>
+                            </div>
+                            <div class="info">
+                                <h3 class="main">Finanças</h3>
+                                <p class="sub">Conhecimento técnico na área de finanças</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="option" style="background: url('/portfolio/assets/pics/bg-4.jpg');">
+                        <div class="shadow"></div>
+                        <div class="label">
+                            <div class="icon">
+                                <i class="fas voluntario"></i>
+                            </div>
+                            <div class="info">
+                                <h3 class="main">Voluntariado</h3>
+                                <p class="sub">Participando ativamente de trabalhos voluntários</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer class="normal-footer">
@@ -198,5 +255,20 @@
 
         <p>Designed by <span id="destaque">Rayssa Sousa</span></p>
     </footer>
+
+    <script>
+        document.querySelectorAll(".option").forEach(function(option) {
+    option.addEventListener("click", function() {
+        document.querySelectorAll(".option").forEach(function(opt) {
+            opt.classList.remove("active");
+            opt.style.backgroundSize = "cover";
+        });
+        option.classList.add("active");
+        option.style.backgroundSize = "100% auto%";
+        option.style.backgroundPosition = "center";
+    });
+});
+
+    </script>
 </body>
 </html>
