@@ -153,7 +153,7 @@ header{
 }
 
 .about, .works, .galery{
-    padding-top: 15rem;
+    padding-top:7rem;
     height: 55vh;
     background-color: black;
     display: flex;
@@ -161,10 +161,14 @@ header{
 
 .about{
     margin-bottom: 15rem;
+    border-top: 5px solid rgb(59, 165, 59);
+    border-radius: 4rem;
 }
 .galery{
-    padding: 0;
-    margin-right: 10rem;
+    padding: 7rem;
+    border-top: 5px solid rgb(59, 165, 59);
+    border-radius: 4rem;
+    margin-right: 0;
     padding-bottom: 5rem;
 }
 
@@ -176,6 +180,10 @@ header{
 .works{
     margin-right: 10rem;
     margin-bottom: 5rem;
+}
+
+.works ~.divisor-normal{
+    display: none;
 }
 
 .column-align {
@@ -212,24 +220,22 @@ header{
     align-items: end;
 }
 
-.left-align button, .right-align button, .row-align-block button{
+.left-align button, .row-align-block button{
     
     background-color: transparent;
     border: 1px solid rgb(105, 184, 105);
-    color: rgb(59, 165, 59);
     border-radius: 50px;
-    font-size: 2rem;
     padding: 1rem 1.5rem;
-    font-family: kaushan;
     margin-right: 20rem;
 }
 
-.left-align button::after, .right-align button::after, .row-align-block button::after{
-    content: url('assets/projects/icons8-arrastar-para-cima\,-seta-para-a-direita-48.png');
-    margin-left: 1rem;
+.left-align button a, .row-align-block button a{
+    color: rgb(59, 165, 59);
+    font-size: 2rem;
+    font-family: 'Kaushan';
 }
 
-.left-align button:hover, .right-align button:hover, .row-align-block button:hover{
+.left-align button:hover, .row-align-block button:hover{
     background-color: rgb(59, 165, 59);
     color: white;
     transition: 1s ease;
@@ -266,75 +272,6 @@ header{
 
 .row-align-block button{
     margin-top: 5rem;
-}
-
-.display-project-pic{
-    display: none;
-    height: 85vh;
-    background: url('assets/projects//frameworks.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-}
-
-.projects-navigation{
-    padding: 10rem 0 10rem 0;
-    display: flex;
-    max-width: 1000px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.project-display{
-    width: 100%;
-    height: 800px;
-    animation: fade 1.5s;
-    justify-content: center;
-}
-
-.project-display img {
-    object-fit: cover;
-    object-position: center ;
-    border-radius: 50px;
-    max-height: 700px;
-    max-width: 1000px;
-}
-
-.previous, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 80%;
-    width: auto;
-    margin-top: -22px;
-    padding: 1rem;
-    color: rgb(105, 184, 105);
-    border: 1px solid rgb(105, 184, 105);
-    border-radius: 50%;
-    font-weight: bold;
-    font-size: 2rem;
-    transition: 0.6s ease;
-    user-select: none;
-}
-
-.previous:hover, .next:hover{
-    background-color: rgba(59, 165, 59, 0.8);
-}
-
-.next {
-    right: -10%;
-}
-
-.previous{
-    left: -10%;
-}
-
-@keyframes fade {
-    from{
-        opacity: .4;
-    } to{
-        opacity: 1;
-    }
 }
 
 footer{
@@ -695,15 +632,115 @@ footer p{
     display: none;
 }
 
-.box{
-    display: none;
-}
-
 .organize-profile-photo{
     display: flex;
     width: 100%;
     justify-content: center;
     margin: 3rem 0;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    position: relative;
+    background-color: rgba(59, 165, 59, 0.7);
+    padding: 5rem 0;
+}
+
+.box h2{
+    font-size: 3rem;
+    margin: 0;
+    margin-bottom: 4rem;
+    font-family: kaushan;
+    color: rgb(173, 240, 173);
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.cards-projects{
+    height: 100%;
+    width: 100%;
+    top: 50px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+    justify-content: center;
+    row-gap: 3rem;
+    align-items: center;
+}
+
+.cards{
+    height: 300px;
+    width: 300px;
+    border-radius: 50px;
+    background-color: white;
+    position: relative;
+    z-index: 1;
+    perspective: 1000px;
+
+
+    &:hover .card1, &:hover .card2, &:hover .card3{
+        transform: rotateX(9deg) translateY(-26px);
+
+        &::after{
+            transform: translateY(0%);
+        }
+    } 
+
+    &::before{
+        display: block;
+        content: "";
+        color: white;
+        position: absolute;
+        top: 5%;
+        width: 90%;
+        height: 90%;
+        background: rgb(0,0,0, 0.5);
+        border-radius: 50px;
+        will-change: opacity;
+        transform-origin: top center;
+        transform: skewX(.001deg);
+        transition: transform .35s ease-in-out, opacity .5s ease-in-out;
+    }
+
+    &:hover::before{
+        opacity: 1;
+        transform: rotateX(9deg) translateY(-10px) scale(1.15);
+    }
+}
+
+.card1, .card2, .card3{
+    border-radius: 50px;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    perspective-origin: 50% 50%;
+    transform-style: preserve-3d;
+    transform-origin: top center;
+    will-change: transform;
+    transform: skewX(.001deg);
+    transition: transform .35s ease-in-out;
+
+    &::after{
+        display: block;
+        content: "";
+        position: absolute;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 120%;
+        background: linear-gradient(226deg, rgba(255,255,255,0.4) 0%, rgba(255,255,255,0.4) 35%, rgba(255,255,255,0.2) 42%, rgba(255,255,255,0) 60%);
+        transform: translateY(-30%);
+        will-change: transform;
+        transition: transform .65s cubic-bezier(0.18, 0.9, 0.58, 1);
+    }
 }
 
 .profile-outline{
