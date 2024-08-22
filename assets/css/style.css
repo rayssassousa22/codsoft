@@ -178,7 +178,7 @@ header{
 }
 
 .works{
-    margin-right: 10rem;
+    padding-right: 10rem;
     margin-bottom: 5rem;
 }
 
@@ -278,12 +278,6 @@ footer{
     height: fit-content;
 }
 
-.bg-green{
-    display: none;
-    height: 40vh;
-    background: linear-gradient(black 5%, transparent), rgb(67, 182, 67);
-}
-
 .footer-img-bg{
     height: 60vh;
     position: relative;
@@ -299,7 +293,7 @@ footer{
     text-transform: uppercase;
     font-size: 10rem;
     letter-spacing: 1rem;
-    filter: brightness(3);
+    filter: brightness(2);
     font-weight: 600;
     margin-left: 8rem;
 }
