@@ -75,6 +75,7 @@ a{
     border-radius: 20px;
     border: .5rem solid black;
     z-index: 1;
+    position: relative;
 }
 
 .bg-orange{
@@ -96,6 +97,7 @@ a{
     border-radius: 20px;
     margin: .5rem 0;
     margin-left: .5rem;
+    position: relative;
 }
 
 .intro-company-box{
@@ -386,4 +388,110 @@ a{
     right: -10%;
     position: absolute;
     height: fit-content;
+}
+
+.bg-blue img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 90%;
+}
+
+.text-container {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+}
+
+.text-container h2{
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+.text-container p {
+    margin: 0;
+    font-family: roboto-thin;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.text-container p::after{
+    content: ">";
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    margin-left: 2.5rem;
+    cursor: pointer;
+}
+
+.rows{
+    height: 50%;
+    width: 100%;
+}
+
+.rows h2{
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: normal;
+    width: 40%;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.rows ~.rows {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.rows button {
+    margin-bottom: 2rem;
+    border: 0;
+    background-color: black;
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.rows a {
+    margin-bottom: 2rem;
+    color: white;
+    font-family: roboto-thin;
+    font-size: 2rem;
+}
+
+.rows a::after{
+    content: ">";
+    font-size: 3rem;
+    color: white;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.bg-yellow img {
+    position: absolute;
+    bottom: 0%;
+    height: 130%;
+    left: 25%;
+}
+
+.bg-yellow h2{
+    color: black;
+    font-weight: bold;
+    width: 30%;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+
+.bg-yellow h2::after{
+    content: ">";
+    color: black;
+    font-size: 2rem;
+    font-weight: normal;
+    display: flex;
+    cursor: pointer;
 }
