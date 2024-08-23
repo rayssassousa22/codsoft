@@ -14,6 +14,18 @@ body, a {
     color: black;
 }
 
+body.loaded::-webkit-scrollbar {
+    background: rgb(59, 149, 59);
+    width: 5px;
+  }
+  body::-webkit-scrollbar {
+    background: rgb(4, 66, 4);
+    width: 5px;
+  }
+  body::-webkit-scrollbar-thumb {
+    background: rgb(146, 223, 146);
+  }
+
 main{
     background-color: black;
 }

@@ -1006,7 +1006,7 @@
     font-size: 64px;
     position: relative;
     z-index: 3;
-    color: rgb(59, 165, 59);
+    color: rgb(15, 82, 15);
     line-height: 1;
     pointer-events: none;
     transform: translateY(calc(100px - (var(--progress) * 200px)));
@@ -1196,7 +1196,7 @@
     z-index: 2;
   }
   body #wrap .panel .thumb .inner:after {
-    background: #eeece5;
+    background: rgb(146, 223, 146);
     opacity: 1;
     z-index: -2;
     mix-blend-mode: normal;
