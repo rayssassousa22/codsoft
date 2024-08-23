@@ -249,6 +249,11 @@ header{
 
 .left-align button:hover, .row-align-block button:hover{
     background-color: rgb(59, 165, 59);
+    transition: 1s ease;
+    cursor:pointer;
+}
+
+.left-align button a:hover, .row-align-block button a:hover{
     color: white;
     transition: 1s ease;
     cursor:pointer;
