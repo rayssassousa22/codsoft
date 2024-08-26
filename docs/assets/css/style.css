@@ -674,7 +674,7 @@ footer p {
 
 .title-01{
     width: 100%;
-    padding: 0 2rem;
+    padding: 5REM 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -724,6 +724,7 @@ footer p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: .5rem;
+    padding-bottom: 2REM;
 }
 
 .display-card-pic{
