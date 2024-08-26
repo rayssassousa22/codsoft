@@ -735,4 +735,49 @@ footer p {
 
 .display-type-text{
     color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.display-type-text p {
+    color: grey;
+}
+
+.display-type-text a {
+    color: black;
+    font-size: 1.5rem;
+}
+
+.display-type-text a::before{
+    content: ">";
+    color: black;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+}
+
+.display-work ~.display-work .display-type-text {
+    align-items: flex-start;
+}
+
+.display-work ~.display-work .display-type-text p{
+    color: black;
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+.display-work ~.display-work .display-type-text button{
+    background-color: transparent;
+    border: 0;
+    font-size: 1.3rem;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+.display-work ~.display-work .display-type-text button:after{
+    content: ">";
+    color: black;
+    font-size: 1.5rem;
+    margin-left: 1rem;
 }
