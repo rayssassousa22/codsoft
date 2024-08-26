@@ -969,3 +969,75 @@ form a {
 
     margin: 1rem 0;
 }
+
+.about-page{
+    color: black;
+}
+
+.title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.title-container h1{
+    font-weight: normal;
+    font-size: 4rem;
+    width: 40%;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.title-container p{
+    display: flex;
+    width: 30%;
+    text-align: center;
+}
+
+.display-workers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.workers-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.worker-card-pic{
+    height: 400px;
+    width: 350px;
+    background: url('/docs/assets/pics/edgy\ wallpaper\ dark\ wallpaper\ hd\ wallpaper\ dark\ wallpapers\ aesthetic\ black\ wallpaper\ iphone.jpg');
+    border-radius: 50px;
+}
+
+.worker-info{
+    padding: 1rem 0;
+}
+
+.worker-info h2{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.worker-info h3{
+    font-size: 1rem;
+    margin: .5rem 0;
+    font-weight: normal;
+    color: grey;
+}
+
+.worker-info p{
+    font-size: .9rem;
+    margin: 0;
+}
+
+.logo h1 a{
+    color: black;
+}
