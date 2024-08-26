@@ -425,12 +425,12 @@ a{
     cursor: pointer;
 }
 
-.rows{
+.row{
     height: 50%;
     width: 100%;
 }
 
-.rows h2{
+.row h2{
     margin: 0;
     font-size: 2.5rem;
     font-weight: normal;
@@ -439,35 +439,38 @@ a{
     padding-top: 1.5rem;
 }
 
-.rows ~.rows {
+.row ~ .row {
     display: flex;
     align-items: flex-end;
     justify-content: space-around;
 }
 
-.rows button {
+.row button {
     margin-bottom: 2rem;
     border: 0;
     background-color: black;
     color: white;
-    padding: 1rem 2.5rem;
     border-radius: 30px;
+    padding: 1rem 1.5rem;
+}
+
+.row button a {
     font-size: 1rem;
     font-weight: bold;
 }
 
-.rows a {
+.row a {
     margin-bottom: 2rem;
     color: white;
     font-family: roboto-thin;
     font-size: 2rem;
 }
 
-.rows a::after{
+.row a::after{
     content: ">";
-    font-size: 3rem;
+    font-size: 2rem;
     color: white;
-    margin-left: 3rem;
+    margin-left: 1rem;
     cursor: pointer;
 }
 
