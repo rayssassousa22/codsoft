@@ -535,7 +535,6 @@ ul li:hover{
 }
 
 main {
-    height: 90vh;
     padding: 0 5rem;
     z-index: 1;
 }
@@ -671,4 +670,69 @@ footer p {
 #destaque{
     color: yellow;
     cursor: pointer;
+}
+
+.title-01{
+    width: 100%;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.row h1, .row p{
+    color: black;
+}
+
+.row h1 {
+    font-family: roboto-thin;
+    margin: 0;
+    font-weight: bold;
+    font-size: 15rem;
+    margin-bottom: 1rem;
+}
+
+.row-01 h1 {
+    margin-right: 5rem;
+}
+
+.row-02 h1{
+    margin-left: 5rem;
+}
+
+.row-01 p{
+    font-size: 1.2rem;
+    display: flex;
+    width: 5%;
+}
+
+.row-02 p{
+    width: 13%;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.display-work{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
+}
+
+.display-card-pic{
+    background: url('/docs/assets/pics/edgy\ wallpaper\ dark\ wallpaper\ hd\ wallpaper\ dark\ wallpapers\ aesthetic\ black\ wallpaper\ iphone.jpg');
+    background-size: cover;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+}
+
+.display-type-text{
+    color: black;
 }
