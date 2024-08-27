@@ -53,7 +53,7 @@ body{
     background-color: rgba(0, 0, 139, 0.5);
     border-radius: 30px;
     border: 0;
-    font-size: 5rem;
+    font-size: 4rem;
     color: white;
 }
 
@@ -68,4 +68,59 @@ body{
 #clear {
     font-size: 3rem;
     font-style: italic;
+}
+
+@media only screen and (min-width:630px) and (max-width:1000px) {
+    .calculator-container{
+        width: 100vw;
+    }
+
+    .calculator-box{
+        padding: 2rem;
+    }
+
+    .calculator-display-result{
+        height: 20%;
+    }
+
+    .calculator-buttons-area{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .buttons{
+        font-size: 2rem;
+    }
+
+    #clear{
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width:629px) {
+    .calculator-container{
+        width: 100vw;
+    }
+
+    .calculator-box{
+        padding: 2rem;
+        width: 80%;
+    }
+
+    .calculator-display-result{
+        height: 15%;
+    }
+
+    .buttons {
+        font-size: 2.5rem;
+    }
+
+    #clear{
+        font-size: 1rem;
+    }
+
+    .calculator-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
